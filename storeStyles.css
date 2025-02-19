@@ -1,5 +1,6 @@
 
 
+
 menu.menuList{
     background-color: rgba(0,0,0,0.41);
     color: white;
@@ -23,7 +24,6 @@ li.menuItem {
     padding-left: 7%;
     font-family: 'Instrument Sans';
     font-weight: normal;
-    cursor: pointer;
 }
 
 h1.Title{
@@ -66,13 +66,8 @@ div.mainBtnAling{
 
 
 body {
-    background-image: url("mainImg.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    height: 96vh;
-    margin:0;
+ 
+    background-color: rgb(9,9,9);
 }
 
 
