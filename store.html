@@ -15,5 +15,75 @@
 <body>
 
 
+
+    <menu class="menuList">
+        <li class="menuItem" onclick="window.location.href='main.html';">Main</li>
+        <li class="menuItem" onclick="window.location.href='store.html';">Store</li>
+        <li class="menuItem" onclick="window.location.href='store.html';">Conctact us</li>
+    </menu>
+
+    <div class="sidebar">
+        <h1 class="Title">Filter</h1>
+        <input type="text" placeholder="Type in keyword(e.g. title)" class="searchField">
+    <div class="inputBlock">
+        <h2>Price</h2>
+        <input type="text" placeholder="Up to .$" class="inputField">
+    </div>
+    <div class="inputBlock">
+        <h2>Mass</h2>
+        <input type="text" placeholder="Up to .g" class="inputField">
+    
+    </div>
+    <div class="inputBlock">
+        <h2>Type</h2>
+    <div class="row">
+        
+        <div class="selector" onclick="onSelector(this)">
+            Beans
+        </div>
+        <div class="selector" onclick="onSelector(this)">
+            Ground
+        </div>
+    </div>
+    </div>
+
+    <div class="inputBlock">
+        <h2>Ingridients</h2>
+        <div class="row">
+            <div class="selector" onclick="onSelector(this)">
+                Arabica
+            </div>
+            <div class="selector" onclick="onSelector(this)">
+                Robusta
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="inputBlock">
+        <h2>Country of origin</h2>
+        <div class="row">
+            <div class="selector" onclick="onSelector(this)">
+                India
+            </div>
+            <div class="selector" onclick="onSelector(this)">
+                Brazil
+            </div>
+        </div>
+        <div class="row">
+            <div class="selector" onclick="onSelector(this)">
+                Guatemala
+            </div>
+            <div class="selector" onclick="onSelector(this)">
+                Columbia
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<script src="storeScript.js"></script>
+
 </body>
     

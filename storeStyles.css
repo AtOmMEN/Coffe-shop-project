@@ -24,16 +24,27 @@ li.menuItem {
     padding-left: 7%;
     font-family: 'Instrument Sans';
     font-weight: normal;
+    cursor: pointer;
 }
 
 h1.Title{
-    padding-top: 7%;
-    color:white;
+    
+    padding-left: 40px;
+    color: white;
     font-family: 'Instrument Sans', sans-serif;
-    text-align: center;
-    font-size: 48px;
+    text-align: left;
+    font-size: 18px;
     font-weight: bold;
-    text-shadow: 0px 0px 46px black;
+    
+}
+
+h2{
+    color: white;
+    font-family: 'Instrument Sans', sans-serif;
+    text-align: left;
+    font-size: 14px;
+    font-weight:normal;
+    
 }
 
 button.mainButton{
@@ -64,12 +75,110 @@ div.mainBtnAling{
  
 }
 
+.sidebar{
+    width:320px;
+    margin-top:8%;
+    margin-left: 5%;
+    padding-top: 20px;
+    border-radius: 8px;
+    background-color: rgb(20,20,20);
+    display: block;
+    border: 1px solid rgba(66, 66, 66, 1);
+    box-sizing: content-box;
+    height:650px;
+}
+
+.inputBlock{
+    margin-top: 30px;
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 14px;
+    margin-left: 40px;
+    
+}
+
+input.inputField{
+
+    background-color:rgba(5, 5, 5, 1);
+    width:240px;
+    font-family: 'Instrument Sans', sans-serif;
+    color: rgba(209, 209, 209, 1);
+    font-size: 14px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    box-sizing: border-box;
+    
+    outline: none;
+}
+
+input.searchField{
+    margin-top: 10px;
+    background-color:rgba(5, 5, 5, 1);
+    width:240px;
+    margin-left: 40px;
+    font-family: 'Instrument Sans', sans-serif;
+    color: rgba(209, 209, 209, 1);
+    font-size: 14px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-image: url('searchThumb.png');
+    background-repeat: no-repeat;
+    background-position: right 10px center; 
+    background-size: 20px;
+    padding-left: 10px;
+    box-sizing: border-box;
+
+    outline: none;
+}
+
+input.searchField:focus:not(:placeholder-shown) {
+    background: none;
+    background-color:rgba(5, 5, 5, 1);
+}
 
 body {
- 
+    display:flex;
     background-color: rgb(9,9,9);
 }
 
+.row{
+    width:240px;
+    overflow: hidden;
+    display: flex;
+    gap:20px;
+    margin-bottom: 10px;
+}
+
+.selector{
+    flex: 0 1 auto;
+    background-color:rgba(5, 5, 5, 1);
+    color: rgba(169, 169, 169, 1);
+    font-size: 14px;
+    height: 35px;
+    max-width: 100%;
+    width:140px;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 300ms;;
+    
+}
+
+.selector:checked{
+    background-color: rgba(220, 255, 103, 1);
+}
+
+
+button, div,input {
+    -webkit-user-select: none;  /* Safari, older Chrome */
+    user-select: none;          /* Modern browsers */
+}
 
 
     
