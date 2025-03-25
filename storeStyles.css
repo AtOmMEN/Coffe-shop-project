@@ -186,8 +186,8 @@ button, div,input {
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-    row-gap: 50px;
+    gap: 2%;
+    row-gap: 2%;
 }
 
 .panel {
