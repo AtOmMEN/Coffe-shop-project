@@ -179,11 +179,11 @@ button, div,input {
 
 
 .panelsBlock {
-    width: 100%;
+    width: auto;
     box-sizing: border-box;
     margin-top: 8%;
-    padding-left: calc(13% + 320px);
-    padding-right: 8%;
+    padding-left: calc(10% + 320px);
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 35px;
@@ -193,7 +193,7 @@ button, div,input {
 .panel {
     background-color: rgba(20, 20, 20, 1);
     outline-color: rgba(66, 66, 66, 1);
-    width: auto;
+    width: 300px;
     height: 520px;
     border-radius: 8px;
     outline: 1px solid rgba(66, 66, 66, 1);
