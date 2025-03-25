@@ -75,9 +75,10 @@ div.mainBtnAling{
  
 }
 
-.sidebar{
-    width:320px;
-    margin-top:8%;
+.sidebar {
+    position: fixed;
+    width: 320px;
+    margin-top: 8%;
     margin-left: 5%;
     padding-top: 20px;
     border-radius: 8px;
@@ -85,7 +86,7 @@ div.mainBtnAling{
     display: block;
     border: 1px solid rgba(66, 66, 66, 1);
     box-sizing: content-box;
-    height:650px;
+    height: 650px;
 }
 
 .inputBlock{
@@ -166,19 +167,73 @@ body {
     box-sizing: border-box;
     display: inline-block;
     cursor: pointer;
-    transition: background-color 300ms;;
+    transition: background-color 300ms;
     
-}
-
-.selector:checked{
-    background-color: rgba(220, 255, 103, 1);
 }
 
 
 button, div,input {
-    -webkit-user-select: none;  /* Safari, older Chrome */
-    user-select: none;          /* Modern browsers */
+    -webkit-user-select: none; 
+    user-select: none; 
 }
 
 
-    
+.panelsBlock {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8%;
+    padding-left: calc(13% + 320px);
+    padding-right: 8%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    row-gap: 50px;
+}
+
+.panel {
+    background-color: rgba(20, 20, 20, 1);
+    outline-color: rgba(66, 66, 66, 1);
+    width: auto;
+    height: 570px;
+    border-radius: 8px;
+    outline: 1px solid rgba(66, 66, 66, 1);
+    box-sizing: border-box;
+
+}
+
+.panel img {
+     margin: 0 auto;
+     display: block;
+
+     padding-top : 8%;
+     margin-bottom:10%;
+     width: auto;
+     height: 35%;
+
+     object-position: center top;
+ }
+
+div.productBuyButton {
+    background-color: rgba(255, 220, 92, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 14px;
+    height: 60px;
+    max-width: 100%;
+    margin-left:40px;
+    margin-right:40px;
+    margin-top: 8%;
+    margin-bottom: 10%;
+    width: auto;
+    text-align: center;
+    align-content: center;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+
+     font-family: 'Instrument Sans', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: block;
+    cursor: pointer;
+}
