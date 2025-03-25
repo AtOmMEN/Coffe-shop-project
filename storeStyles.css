@@ -194,7 +194,7 @@ button, div,input {
     background-color: rgba(20, 20, 20, 1);
     outline-color: rgba(66, 66, 66, 1);
     width: auto;
-    height: 570px;
+    height: 520px;
     border-radius: 8px;
     outline: 1px solid rgba(66, 66, 66, 1);
     box-sizing: border-box;
@@ -208,7 +208,7 @@ button, div,input {
      padding-top : 8%;
      margin-bottom:10%;
      width: auto;
-     height: 35%;
+     height: 30%;
 
      object-position: center top;
  }
@@ -221,7 +221,7 @@ div.productBuyButton {
     max-width: 100%;
     margin-left:40px;
     margin-right:40px;
-    margin-top: 8%;
+    margin-top: 5%;
     margin-bottom: 10%;
     width: auto;
     text-align: center;
