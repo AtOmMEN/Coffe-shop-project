@@ -179,11 +179,12 @@ button, div,input {
 
 
 .panelsBlock {
+    padding-bottom: 50px;
     width: auto;
     box-sizing: border-box;
     margin-top: 8%;
     padding-left: calc(10% + 320px);
-
+    margin-bottom:50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2%;
@@ -198,8 +199,12 @@ button, div,input {
     border-radius: 8px;
     outline: 1px solid rgba(66, 66, 66, 1);
     box-sizing: border-box;
-
+    transition: background-color 0.3s ease-in-out;
 }
+
+    .panel:hover {
+        background-color: rgba(66, 66, 66, 1);
+    }
 
 .panel img {
      margin: 0 auto;
@@ -219,8 +224,8 @@ div.productBuyButton {
     font-size: 14px;
     height: 60px;
     max-width: 100%;
-    margin-left:40px;
-    margin-right:40px;
+    margin-left: 40px;
+    margin-right: 40px;
     margin-top: 5%;
     margin-bottom: 10%;
     width: auto;
@@ -229,11 +234,15 @@ div.productBuyButton {
     border-radius: 10px;
     border: none;
     box-sizing: border-box;
-
-     font-family: 'Instrument Sans', sans-serif;
+    font-family: 'Instrument Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
-
     display: block;
     cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.productBuyButton:hover {
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
 }
