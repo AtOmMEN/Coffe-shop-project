@@ -1,6 +1,15 @@
 
 
 
+body {
+    background-image: url("storebg.png");
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+
+
 menu.menuList{
     background-color: rgba(0,0,0,0.41);
     color: white;

@@ -1,5 +1,21 @@
 
 
+
+body {
+    background-image: url("aboutusbg.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.split{
+    display:flex;
+    padding-top: 10%;
+    padding-right:0;
+}
+
+
+
 menu.menuList{
     background-color: rgba(0,0,0,0.41);
     color: white;
@@ -26,14 +42,33 @@ li.menuItem {
     cursor: pointer;
 }
 
+
+
 h1.Title{
-    padding-top: 7%;
-    color:white;
+  
+    padding-top:8%;
+    padding-left: 30%;
+    padding-right : 0;
+    color: white;
     font-family: 'Instrument Sans', sans-serif;
-    text-align: center;
-    font-size: 48px;
-    font-weight: bold;
-    text-shadow: 0px 0px 46px black;
+    text-align: left;
+    font-size: 45px;
+    font-weight: 500;
+    
+}
+
+h2 {
+    padding-top:30px;
+    padding-left: 30%;
+    color: white;
+    font-family: 'Instrument Sans', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+
+    text-align: justify;
+    line-height: 27px;
+
 }
 
 button.mainButton {
@@ -64,18 +99,3 @@ div.mainBtnAling{
     height: 60px;
  
 }
-
-
-body {
-    background-image: url("mainImg.png");
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: black;
-    height: 96vh;
-    margin:0;
-}
-
-
-
-    
