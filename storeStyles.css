@@ -1,6 +1,32 @@
 
 
 
+.dialog {
+    background-color: rgba(20, 20, 20, 1);
+    width: 560px;
+    height: 390px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
+    outline-color: rgba(66, 66, 66, 1);
+    outline-style:solid;
+    outline-width:1px;
+    border-radius:11px;
+    display: flex;
+}
+
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(30px);
+    display: none; 
+    z-index: 100;
+}
+
 body {
     background-image: url("storebg.png");
     background-size: cover; 
@@ -27,6 +53,7 @@ menu.menuList{
     backdrop-filter: blur(100px);
     -webkit-backdrop-filter: blur(100px);
 }
+
 li.menuItem {
     display: inline;
     font-size: 12px;
@@ -211,9 +238,6 @@ button, div,input {
     transition: background-color 0.3s ease-in-out;
 }
 
-    .panel:hover {
-        background-color: rgba(66, 66, 66, 1);
-    }
 
 .panel img {
      margin: 0 auto;
@@ -251,7 +275,3 @@ div.productBuyButton {
     transition: background-color 0.3s ease-in-out;
 }
 
-.productBuyButton:hover {
-    background-color: rgba(0, 0, 0, 1);
-    color: rgba(255, 255, 255, 1);
-}
