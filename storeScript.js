@@ -222,9 +222,11 @@ function computePrice() {
 
     if (parseFloat(amountinput.value) > amountLeft[currTitle.textContent]) {
         document.getElementById("amounterror").style.display = "block";
+        button.style.display = "none";
     }
     else {
         document.getElementById("amounterror").style.display = "none";
+        button.style.display = "block";
     }
 
 }
