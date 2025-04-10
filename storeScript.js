@@ -210,17 +210,20 @@ function computePrice() {
             break;
         }
     }
+   
     if (parseFloat(amountinput.value) > 0 && parseFloat(amountinput.value) < 100) {
         let final_val = parseFloat(price) * Math.abs(parseFloat(amountinput.value));
+        let t_val = parseFloat(final_val.toFixed(2));
+  
         console.log(parseFloat(amountinput.value));
         console.log(parseFloat(price));
-        button.textContent = "Buy for " + final_val;
+        button.textContent = "Buy for " + t_val;
     }
     else {
         button.style.display = "none";
     }
 
-    if (parseFloat(amountinput.value) > amountLeft[currTitle.textContent]) {
+    if (parseFloat(amountinput.value) > amountLeft[currTitle.textContent] || parseFloat(amountinput.value) < 1) {
         document.getElementById("amounterror").style.display = "block";
         button.style.display = "none";
     }
